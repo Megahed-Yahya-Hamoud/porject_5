@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.scss" />
+    <link rel="stylesheet" href="_file.style.scss" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body class="bg-dark">
+    <!-- start nav-bar -->
+
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-dark position-fixed w-100"
+    >
+      <div class="container-fluid text-light">
+        <a class="navbar-brand text-light" href="#"><b>Shopping</b></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#product">products</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <button class="btn btn-outline-success text-light" type="submit">
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- end nav-bar -->
+
+    <!-- start form section -->
+
+    <header class="form-section">
+      <form class="form" action="" method="get">
+        <input
+          class="first m-1 p-1"
+          type="text"
+          placeholder="First Name"
+          name="first"
+          required
+        />
+
+        <input
+          class="last m-1 p-1"
+          type="text"
+          placeholder="Last Name"
+          name="last"
+          required
+        />
+        <br />
+        <input
+          class="pass m-1 p-1 w-100"
+          type="password"
+          placeholder="Write password content letters and number"
+          name="password"
+          minlength="8"
+          required
+        />
+        <br />
+        <input
+          class="email m-1 p-1 w-100"
+          type="email"
+          placeholder="email@gmail"
+          name="email"
+          required
+        />
+        <br />
+        <button
+          type="submit"
+          class="btn-form btn btn-outline-success m-1 w-100 text-light"
+        >
+          Submit
+        </button>
+      </form>
+    </header>
+
+    <!-- end form section -->
+
+    <!-- start product section -->
+    <div class="set-data" id="product">
+      <div class="text-center fs-1 mb-4">
+        <p class="text"><b>Products</b></p>
+      </div>
+      <div class="container">
+        <div class="row fetch-data row-cols-3"></div>
+      </div>
+    </div>
+    <!-- end product section -->
+
+    <!-- start footer -->
+
+    <footer>
+      <div class="div-footer-2 pt-4">
+        <div>
+          <p class="style"><b>CONTACT US</b></p>
+          <p>
+            <i class="fa-solid fa-location-dot fs-4" style="color: #19d739"></i>
+            Gb road london Uk
+          </p>
+          <p>
+            <i class="fa-solid fa-phone fs-4" style="color: #19d739"></i>
+            0112345678901
+          </p>
+          <p>
+            <i
+              class="fa-solid fa-message fs-4 align-middle"
+              style="color: #19d739"
+            ></i>
+            mail@domain.com
+          </p>
+        </div>
+
+        <div class="div-footer">
+          <p class="style mb-0"><b>SOCIAL MEDIA</b></p>
+          <ul class="ul-footer ps-0">
+            <li>
+              <a href="#" target="_blank" class="social-footer"
+                ><img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png"
+                  alt="test"
+                />
+                <b>Facebook</b></a
+              >
+            </li>
+            <li>
+              <a href="#" target="_blank" class="social-footer"
+                ><img
+                  src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-twitter-social-media-round-icon-png-image_6315985.png"
+                  alt="test"
+                />
+                <b>Twitter</b></a
+              >
+            </li>
+            <li>
+              <a href="#" target="_blank" class="social-footer"
+                ><img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
+                  alt="test"
+                />
+                <b>Instagram</b></a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="style"><b>NEED HELP</b></p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero sequi
+            voluptate et minima fuga dicta debitis illum
+          </p>
+        </div>
+        <div>
+          <p class="style"><b>NEWSLETTER</b></p>
+          <input type="email" placeholder="Enter your email" />
+          <button class="sub">SUBSCRIBE</button>
+        </div>
+      </div>
+      <div class="line">
+        ________________________________________________________________________________________________________
+      </div>
+      <p class="the-end">2023 All Rights Reserved. By HTML Design</p>
+    </footer>
+    <!-- end footer -->
+    <button class="btn position-fixed" id="bt">
+      <i class="fa-solid fa-arrow-up Arrow-up fs-1" style="color: #0bda24"></i>
+    </button>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="javaScript.js"></script>
+  </body>
+</html>
